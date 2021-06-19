@@ -75,8 +75,10 @@ $(document).ready(function(){
         $('.mobile_menu_wrap').animate({width:'toggle'},350);
         $(document.body).css({overflow: 'auto'})
     })
-        $(function(){
-
+    
+      $(function(){
+        if ($(window).width() > '1024'){
+            
         var scrollNow = 0;
         $(window).scroll(function(event){
       
@@ -91,5 +93,7 @@ $(document).ready(function(){
       
             scrollNow = scrollNext;  
         });
+   
+        }
       });
 });

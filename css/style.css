@@ -69,6 +69,7 @@ body {
 	width: 600px;
 	height: 40px;
 	font-size: 18px;
+	background: #fcfcfc;
 }
 .search {
 	position: relative;

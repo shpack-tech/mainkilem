@@ -75,4 +75,21 @@ $(document).ready(function(){
         $('.mobile_menu_wrap').animate({width:'toggle'},350);
         $(document.body).css({overflow: 'auto'})
     })
+        $(function(){
+
+        var scrollNow = 0;
+        $(window).scroll(function(event){
+      
+            var scrollNext = $(this).scrollTop();
+      
+            if (scrollNext > scrollNow){
+               $('.header_bot').slideUp('fast');
+            }
+            else {
+                $('.header_bot').slideDown('fast');
+            }
+      
+            scrollNow = scrollNext;  
+        });
+      });
 });

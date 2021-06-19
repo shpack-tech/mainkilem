@@ -920,7 +920,8 @@ body {
 		font-size: 18px;
 	}
 
-	.swiper-slide {
+	.main_slider .swiper-slide {
+		padding: 0 5px;
 	}
 	.main-slide {
 		height: 365px;

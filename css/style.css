@@ -229,6 +229,7 @@ body {
 }
 .city_popup_body .search input {
 	width: 100%;
+	background: #fcfcfc;
 }
 
 .city_row a {

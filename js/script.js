@@ -67,10 +67,12 @@ $(document).ready(function(){
 
     $('.burger').on('click', function(){
         $('.mobile_menu_wrap').animate({width:'toggle'},350);
+        $(document.body).css({overflow: 'hidden'})
+
 
     })
     $('.close_mobile_menu').on('click', function(){
         $('.mobile_menu_wrap').animate({width:'toggle'},350);
-
+        $(document.body).css({overflow: 'auto'})
     })
 });
